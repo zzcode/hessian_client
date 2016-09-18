@@ -22,7 +22,8 @@ public class TestHessian {
 	 OtaServiceForHessian otaservice;
 	 @Test
     public void testService() throws MalformedURLException {
-        ApplicationContext context = new ClassPathXmlApplicationContext("hessian/hessian-client.xml");
+        @SuppressWarnings("resource")
+		ApplicationContext context = new ClassPathXmlApplicationContext("hessian/hessian-client.xml");
         PayLogicService hello = (PayLogicService) context.getBean("hessianClient");
         System.out.println(hello.queryPayRes("201606180126000218"));
     }
