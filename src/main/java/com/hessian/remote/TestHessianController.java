@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.smarthaier.server.remote.hessian.PayLogicService;
 
 @Controller
-@RequestMapping("/hello")
+@RequestMapping("/helloo")
 public class TestHessianController { 
 	
 	@Autowired
